@@ -42,7 +42,6 @@
             padding: 20px 0;
         }
         
-        /* --- Mascot --- */
         #mascot-container {
             position: fixed;
             bottom: 20px;
@@ -67,7 +66,6 @@
             100% { transform: translateY(0px); }
         }
 
-        /* --- Navigation --- */
         .navbar {
             position: fixed; top: 0; left: 0; width: 100%;
             background: rgba(30, 26, 47, 0.8);
@@ -93,7 +91,6 @@
         .nav-links a.active::after { width: 100%; }
         .menu-toggle { display: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
 
-        /* --- Hero Section --- */
         .hero {
             height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center;
             padding: 0 20px;
@@ -110,7 +107,6 @@
         .hero h2 { font-size: 1.5rem; color: var(--heading-color); margin-bottom: 30px; }
         .hero p { font-size: 1.1rem; color: var(--text-color); }
         
-        /* --- Section Styling --- */
         .content-section { padding: 80px 0; border-bottom: 1px solid rgba(169, 85, 247, 0.1); }
         .section-title { text-align: center; margin-bottom: 60px; }
         .section-title h2 {
@@ -124,7 +120,6 @@
         }
         .section-title p { font-size: 1.2rem; color: var(--secondary-glow); }
 
-        /* --- Magic Card Styling --- */
         .magic-card {
             background: var(--card-bg); border-radius: 15px; padding: 30px; margin-bottom: 40px;
             border: 1px solid rgba(169, 85, 247, 0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.5);
@@ -137,17 +132,18 @@
         .card-header i { font-size: 2.5rem; color: var(--secondary-glow); width: 50px; text-align: center; }
         .card-header h3 { font-size: 1.8rem; font-weight: 700; color: var(--heading-color); }
         .card-body p { margin-bottom: 15px; }
+        .card-body h4 { font-size: 1.2rem; color: var(--secondary-glow); margin-top: 25px; margin-bottom: 10px; }
 
-        /* --- NEW: Visualized Steps --- */
+
         .steps {
             list-style: none;
-            padding-left: 50px; /* Make room for numbers */
+            padding-left: 50px;
             counter-reset: step-counter;
         }
         .steps li {
             margin-bottom: 25px;
             position: relative;
-            padding-bottom: 25px; /* Space for the line */
+            padding-bottom: 25px;
         }
         .steps li::before {
             counter-increment: step-counter;
@@ -183,7 +179,6 @@
             z-index: 0;
         }
         
-        /* --- NEW: Visual UI Term Highlight --- */
         .ui-term {
             background-color: var(--ui-term-bg);
             border: 1px solid var(--ui-term-border);
@@ -194,7 +189,6 @@
             font-family: monospace;
         }
         
-        /* --- Prompt & Example Boxes --- */
         .example-box {
             background: var(--highlight-bg);
             border-left: 4px solid var(--accent-color);
@@ -222,7 +216,6 @@
             color: #eee; font-family: monospace; padding: 2px 6px; font-size: 0.9em;
         }
         
-        /* --- Exercises Section --- */
         .exercise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
         .exercise-card {
             background: var(--card-bg); border-radius: 10px; padding: 25px; text-align: center;
@@ -241,7 +234,6 @@
             padding: 3px 8px; font-size: 0.8em; border-radius: 5px;
         }
 
-        /* --- Footer --- */
         .footer { text-align: center; padding: 40px 0; margin-top: 40px; background: var(--card-bg); }
         .footer p { color: var(--text-color); }
 
@@ -269,10 +261,6 @@
 </head>
 <body>
     <div id="mascot-container">
-        <!-- 
-            [吉祥物] 此處會自動讀取 image/LiyuChill.svg
-            請確認您的資料夾結構是否正確。
-        -->
         <img src="image/LiyuChill.svg" alt="吉祥物">
     </div>
 
@@ -298,7 +286,7 @@
     </header>
 
     <main>
-        <!-- Part 1: AI 魔法師 -->
+        <!-- Part 1: AI 魔法師 (原始內容保留) -->
         <section id="part1" class="content-section">
             <div class="container">
                 <div class="section-title">
@@ -309,7 +297,7 @@
                 <div class="magic-card">
                     <div class="card-header">
                         <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        <h3>1. AI 生成全新圖像 (魔法媒體)</h3>
+                        <h3>1. 【無中生有】AI 生成全新圖像 (魔法媒體)</h3>
                     </div>
                     <div class="card-body">
                         <p><strong>功能介紹：</strong>當您找不到符合歷史情境、地理景觀或公民議題的圖片時，用說的讓 AI 幫您畫出來！</p>
@@ -329,7 +317,7 @@
                 <div class="magic-card">
                     <div class="card-header">
                         <i class="fa-solid fa-wand-sparkles"></i>
-                        <h3>2. AI 編輯現有圖片 (魔法工作室)</h3>
+                        <h3>2. 【有中生變】AI 編輯現有圖片 (魔法工作室)</h3>
                     </div>
                     <div class="card-body">
                         <p>當您上傳一張圖片後，點擊圖片上方的 <span class="ui-term">編輯相片</span>，即可進入強大的「魔法工作室」。</p>
@@ -356,7 +344,7 @@
             </div>
         </section>
 
-        <!-- Part 2: 影片剪輯全流程 -->
+        <!-- Part 2: 影片剪輯全流程 (原始內容保留，並加入新技巧) -->
         <section id="part2" class="content-section">
             <div class="container">
                 <div class="section-title">
@@ -364,13 +352,67 @@
                     <h2>影片剪輯全流程 — 組合你的教學故事</h2>
                 </div>
                 
+                <!-- 以下為新增的詳細技巧卡片 -->
                 <div class="magic-card">
-                    <div class="card-header"><i class="fa-solid fa-film"></i><h3>1. 核心剪輯技巧 (時間軸操作)</h3></div>
+                    <div class="card-header"><i class="fa-solid fa-folder-plus"></i><h3>影片專案建立與素材管理</h3></div>
+                    <div class="card-body">
+                        <p>一部影片的開始，是建立專案並匯集所有材料。</p>
+                        <ul class="steps">
+                            <li>透過左上角 <span class="ui-term">建立設計</span> → <span class="ui-term">影片</span> 來新增專案，可選擇 1080p 等常見格式。</li>
+                            <li>利用關鍵字搜尋 Canva 內建影片素材，或從電腦拖曳自己的影片檔上傳。</li>
+                            <li>將素材拖曳到時間軸後，可對它按右鍵，選擇 <span class="ui-term">將影片設定為背景</span>，使其自動填滿畫面。</li>
+                            <li>若影片素材本身帶有雜音，可點擊音量圖示，將其 <span class="ui-term">靜音</span>。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="magic-card">
+                    <div class="card-header"><i class="fa-solid fa-film"></i><h3>時間軸核心操作</h3></div>
+                    <div class="card-body">
+                        <p>熟練時間軸操作是提升剪輯效率的關鍵。</p>
+                        <ul class="steps">
+                            <li><strong>播放/暫停：</strong>使用鍵盤上的 <kbd>空白鍵</kbd> 是最快的方式。</li>
+                            <li><strong>重新排序：</strong>直接在時間軸上用滑鼠拖曳影片片段，即可調整它們的播放順序。</li>
+                            <li><strong>分割片段：</strong>將播放頭（白色豎線）拉到要分割的點，按下滑鼠右鍵選 <span class="ui-term">分割頁面</span>，或直接按快捷鍵 <kbd>S</kbd>。</li>
+                            <li><strong>刪除與修剪：</strong>選取不要的片段按 <kbd>Delete</kbd> 刪除。拖曳片段兩側的控制桿，則可以微調（修剪）片段的長度。</li>
+                            <li><strong>畫面調整：</strong>點擊片段，從上方工具列的 <span class="ui-term">編輯</span> 可調整亮度、對比；從 <span class="ui-term">播放</span> 可調整影片速度快慢。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="magic-card">
+                    <div class="card-header"><i class="fa-solid fa-volume-high"></i><h3>旁白、配樂與 AI 字幕</h3></div>
+                    <div class="card-body">
+                        <h4><i class="fa-solid fa-microphone-lines"></i> 錄製與強化口吻</h4>
+                        <p>Canva 內建強大的錄音與優化功能。</p>
+                        <ul class="steps">
+                            <li>在 <span class="ui-term">上傳</span> > <span class="ui-term">錄製自己</span>，可直接在 Canva 錄製旁白。</li>
+                            <li>錄製完成後，對著旁白音軌點擊右上角的 <span class="ui-term">強化口吻</span>，AI 會自動降噪並優化人聲。</li>
+                        </ul>
+                        <h4><i class="fa-solid fa-music"></i> 音樂節拍同步</h4>
+                        <p>讓畫面跟隨音樂節奏，影片更具動感。</p>
+                         <ul class="steps">
+                            <li>對音訊軌點擊右鍵，啟用 <span class="ui-term">顯示節拍標記</span>，可手動對齊節奏。</li>
+                            <li>或啟用 <span class="ui-term">立即同步</span>，讓 AI 自動將影片剪輯點對齊音樂節拍。</li>
+                        </ul>
+                        <h4><i class="fa-solid fa-closed-captioning"></i> AI 自動生成字幕</h4>
+                         <p>這是最省時的字幕製作方式。</p>
+                         <ul class="steps">
+                             <li>先將配好音的影片匯出成 MP4。</li>
+                             <li>建立新專案，上傳該 MP4 影片。</li>
+                             <li>切換到 <span class="ui-term">文字</span> 類別，啟用 <span class="ui-term">Captions (字幕)</span> 功能，AI 就會自動生成字幕。最後只需校對錯字和調整樣式。</li>
+                         </ul>
+                    </div>
+                </div>
+
+                <!-- 以下為原始內容保留 -->
+                <div class="magic-card">
+                    <div class="card-header"><i class="fa-solid fa-film"></i><h3>核心剪輯技巧 (時間軸操作)</h3></div>
                     <div class="card-body">
                         <ul class="steps">
-                            <li>播放與暫停：按下鍵盤的 <span class="ui-term">空白鍵</span>。</li>
-                            <li>分割片段：將播放頭 (白色豎線) 拉到定點，按下快捷鍵 <span class="ui-term">S</span>。</li>
-                            <li>刪除片段：選取不要的片段，按下 <span class="ui-term">Delete</span> 鍵。</li>
+                            <li>播放與暫停：按下鍵盤的 <kbd>空白鍵</kbd>。</li>
+                            <li>分割片段：將播放頭 (白色豎線) 拉到定點，按下快捷鍵 <kbd>S</kbd>。</li>
+                            <li>刪除片段：選取不要的片段，按下 <kbd>Delete</kbd> 鍵。</li>
                             <li>修剪長度：拖曳片段兩側的「控制桿」。</li>
                             <li>重新排序：直接在時間軸上用滑鼠「拖曳」影片片段。</li>
                         </ul>
@@ -378,7 +420,7 @@
                 </div>
 
                 <div class="magic-card">
-                    <div class="card-header"><i class="fa-solid fa-volume-high"></i><h3>2. 聲音與字幕 (旁白、配樂與 AI 字幕)</h3></div>
+                    <div class="card-header"><i class="fa-solid fa-volume-high"></i><h3>聲音與字幕 (旁白、配樂與 AI 字幕)</h3></div>
                     <div class="card-body">
                         <p><strong><i class="fa-solid fa-microphone-lines"></i> AI 語音旁白：</strong></p>
                         <ul class="steps">
@@ -397,7 +439,7 @@
             </div>
         </section>
 
-        <!-- Part 3: 進階創意應用 -->
+        <!-- Part 3: 進階創意應用 (原始內容保留，並加入新技巧) -->
         <section id="part3" class="content-section">
             <div class="container">
                 <div class="section-title">
@@ -405,6 +447,49 @@
                     <h2>進階創意應用 — 讓影片更專業、更有趣</h2>
                 </div>
                 
+                <!-- 以下為新增的詳細技巧卡片 -->
+                <div class="magic-card">
+                    <div class="card-header"><i class="fa-solid fa-layer-group"></i><h3>專業片頭：文字穿透特效</h3></div>
+                    <div class="card-body">
+                        <p>想做出標題文字被建築物遮擋的酷炫效果嗎？關鍵在於圖層管理與背景移除。</p>
+                         <ul class="steps">
+                            <li><strong>準備素材：</strong>先將您的背景圖（如有建築物）和標題文字排版好。</li>
+                            <li><strong>複製與去背：</strong>複製一張背景圖，點擊 <span class="ui-term">編輯相片</span> → <span class="ui-term">背景移除工具</span>，產生只有建築物的圖層。</li>
+                            <li><strong>調整圖層：</strong>將去背後的建築物圖層，拖曳到文字圖層的「上方」，即可蓋住文字，產生穿透感。可按住 <kbd>Ctrl</kbd> 選取多個元素並合併成群組。</li>
+                            <li><strong>增加易讀性：</strong>若背景太花，可按 <kbd>R</kbd> 新增矩形，設為黑色並降低透明度，放在背景與文字之間當作底襯。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="magic-card">
+                    <div class="card-header"><i class="fa-solid fa-object-group"></i><h3>動態圖形：字卡、轉場與動畫</h3></div>
+                    <div class="card-body">
+                        <h4><i class="fa-solid fa-id-card-clip"></i> 字卡效果 (Lower Third)</h4>
+                        <p>常用於新聞或訪談影片，用來標示人名或地點。</p>
+                        <ul class="steps">
+                            <li>在 <span class="ui-term">元素</span> 中搜尋「Lower Third」範本，挑選簡約設計並放置在畫面角落。</li>
+                            <li>按 <kbd>T</kbd> 新增標題文字，疊加在圖形上。按住 <kbd>Shift</kbd> 將兩者選取後組成群組。</li>
+                            <li>點擊 <span class="ui-term">動畫</span> 為字卡套用「線條出現」等特效，使其動態進出場。</li>
+                        </ul>
+                        <h4><i class="fa-solid fa-film"></i> 轉場動畫</h4>
+                        <p>在兩個片段之間的小方塊圖示上點擊，即可加入 <span class="ui-term">堆疊</span> 或 <span class="ui-term">直線擦去</span> 等轉場效果。但請避免濫用，保持影片風格統一。</p>
+                    </div>
+                </div>
+
+                <div class="magic-card">
+                    <div class="card-header"><i class="fa-solid fa-desktop"></i><h3>Mockup 模擬圖應用</h3></div>
+                    <div class="card-body">
+                        <p>想在影片中展示網站或 App 畫面？Mockup 功能是您的最佳幫手。</p>
+                         <ul class="steps">
+                            <li>在左側 <span class="ui-term">應用程式</span> 中搜尋並啟用「樣張 (Mockups)」。</li>
+                            <li>選擇一個您喜歡的模板（如：手機、筆電、螢幕）。</li>
+                            <li>將您事先準備好的網頁截圖，直接拖曳到 Mockup 模板的畫面上，即可自動合成，製作出專業的網頁展示效果。</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- 以下為原始內容保留 -->
                 <div class="magic-card">
                     <div class="card-header"><i class="fa-solid fa-signature"></i><h3>白板手繪動畫 (需 Canva Pro)</h3></div>
                     <div class="card-body">
@@ -436,7 +521,7 @@
             </div>
         </section>
 
-        <!-- Part 4: 實作練習 -->
+        <!-- Part 4: 實作練習 (標籤強化) -->
         <section id="part4" class="content-section">
             <div class="container">
                 <div class="section-title">
@@ -444,12 +529,12 @@
                     <h2>實作練習</h2>
                 </div>
                 <div class="exercise-grid">
-                    <div class="exercise-card"><i class="fa-solid fa-mobile-screen"></i><h4>練習一：歷史情境「如果…」</h4><p>「如果秦始皇拿到 iPhone 15 會做什麼？」</p><div class="exercise-tags"><span>AI 圖像生成</span><span>文字效果</span></div></div>
-                    <div class="exercise-card"><i class="fa-solid fa-mountain-sun"></i><h4>練習二：地理地標的時空穿越</h4><p>「不同時空下的玉山」</p><div class="exercise-tags"><span>背景移除</span><span>AI 背景生成</span></div></div>
-                    <div class="exercise-card"><i class="fa-solid fa-route"></i><h4>練習三：動態歷史地圖演繹</h4><p>「動態呈現絲路的貿易路線」</p><div class="exercise-tags"><span>元素</span><span>自訂動畫</span></div></div>
-                    <div class="exercise-card"><i class="fa-solid fa-bullhorn"></i><h4>練習四：公民議題快閃解說</h4><p>「30 秒看懂什麼是『媒體識讀』」</p><div class="exercise-tags"><span>影片剪輯</span><span>AI 字幕</span></div></div>
-                    <div class="exercise-card"><i class="fa-solid fa-star"></i><h4>練習五：進階綜合應用挑戰</h4><p>「解說『國發會』網站的用途」</p><div class="exercise-tags"><span>白板手繪</span><span>Mockup</span></div></div>
-                    <div class="exercise-card"><i class="fa-solid fa-newspaper"></i><h4>練習六：模擬公民新聞臺</h4><p>「製作一則關於『AI假訊息』的專題報導」</p><div class="exercise-tags"><span>AI 語音</span><span>影片剪輯</span><span>AI 圖像</span></div></div>
+                    <div class="exercise-card"><i class="fa-solid fa-mobile-screen"></i><h4>練習一：歷史情境「如果…」</h4><p>「如果秦始皇拿到 iPhone 15 會做什麼？」</p><div class="exercise-tags"><span>AI 圖像生成</span><span>文字效果</span><span>背景移除</span></div></div>
+                    <div class="exercise-card"><i class="fa-solid fa-mountain-sun"></i><h4>練習二：地理地標的時空穿越</h4><p>「不同時空下的玉山」</p><div class="exercise-tags"><span>AI 背景生成</span><span>影片剪輯</span><span>轉場動畫</span></div></div>
+                    <div class="exercise-card"><i class="fa-solid fa-route"></i><h4>練習三：動態歷史地圖演繹</h4><p>「動態呈現絲路的貿易路線」</p><div class="exercise-tags"><span>元素</span><span>自訂動畫</span><span>地圖動畫</span></div></div>
+                    <div class="exercise-card"><i class="fa-solid fa-bullhorn"></i><h4>練習四：公民議題快閃解說</h4><p>「30 秒看懂什麼是『媒體識讀』」</p><div class="exercise-tags"><span>影片剪輯</span><span>AI 字幕</span><span>強化口吻</span></div></div>
+                    <div class="exercise-card"><i class="fa-solid fa-star"></i><h4>練習五：進階綜合應用挑戰</h4><p>「解說『國發會』網站的用途」</p><div class="exercise-tags"><span>白板手繪</span><span>Mockup</span><span>螢幕錄製</span></div></div>
+                    <div class="exercise-card"><i class="fa-solid fa-newspaper"></i><h4>練習六：模擬公民新聞臺</h4><p>「製作一則關於『AI假訊息』的專題報導」</p><div class="exercise-tags"><span>AI 語音</span><span>影片剪輯</span><span>字卡效果</span><span>AI 圖像</span></div></div>
                 </div>
             </div>
         </section>
